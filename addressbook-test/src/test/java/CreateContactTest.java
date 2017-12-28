@@ -6,8 +6,6 @@ public class CreateContactTest extends TestBase {
 
     @Test
     public void CreateContactTest() {
-
-        
         //openAddressbook
         openAddressbook();
         //login

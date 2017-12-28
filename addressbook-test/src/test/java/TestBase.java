@@ -20,8 +20,6 @@ public class TestBase {
     }
 
 
-
-
     @BeforeMethod
     public void setUp() throws Exception {
         wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
