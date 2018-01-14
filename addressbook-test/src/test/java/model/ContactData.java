@@ -1,37 +1,37 @@
 package model;
 
 public class ContactData {
-    private final String marina;
-    private final String qwert;
-    private final String marina1;
-    private final String hitec;
-    private final String beersheva;
+    private final String name;
+    private final String lname;
+    private final String middlename;
+    private final String work;
+    private final String address;
 
-    public ContactData(String marina, String qwert, String marina1, String hitec, String beersheva) {
-        this.marina = marina;
-        this.qwert = qwert;
-        this.marina1 = marina1;
-        this.hitec = hitec;
-        this.beersheva = beersheva;
+    public ContactData(String name, String lname, String middlename, String work, String address) {
+        this.name = name;
+        this.lname = lname;
+        this.middlename = middlename;
+        this.work = work;
+        this.address = address;
     }
 
-    public String getMarina() {
-        return marina;
+    public String getName() {
+        return name;
     }
 
-    public String getQwert() {
-        return qwert;
+    public String getLname() {
+        return lname;
     }
 
-    public String getMarina1() {
-        return marina1;
+    public String getMiddlename() {
+        return middlename;
     }
 
-    public String getHitec() {
-        return hitec;
+    public String getWork() {
+        return work;
     }
 
-    public String getBeersheva() {
-        return beersheva;
+    public String getAddress() {
+        return address;
     }
 }
