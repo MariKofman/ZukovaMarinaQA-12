@@ -2,14 +2,17 @@ package ApplicationManager;
 
 import model.GroupData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class GroupHeleper extends HelperBase {
 
-    public GroupHeleper(FirefoxDriver wd) {
+    public GroupHeleper(WebDriver wd) {
         super(wd);
     }
-
+    public int getGroupCount() {
+        return getGroupCoutDeletion();
+    }
     public void returneToGroupsPage() {
         click(By.linkText("group page"));
     }
@@ -34,14 +37,6 @@ public class GroupHeleper extends HelperBase {
     public int getGroupCoutDeletion() {
         return wd.findElements(By.name("selected[]")).size();
     }
-
-    public void login(String userName, String password) {
-        type(By.name("user"), userName);
-        type(By.name("pass"), password);
-        click(By.xpath("//*[@value='Login']"));//кнопка enter
-    }
-
-
 
     public void selectGroup() {
         click(By.name("selected[]"));

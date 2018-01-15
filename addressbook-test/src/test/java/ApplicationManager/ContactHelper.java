@@ -2,10 +2,11 @@ package ApplicationManager;
 
 import model.ContactData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ContactHelper extends HelperBase {
-    public ContactHelper(FirefoxDriver wd) {
+    public ContactHelper(WebDriver wd) {
         super(wd);
     }
    // public void fillContactForm() {
@@ -35,7 +36,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public int getContactCount() {
-        return wd.findElements(By.name("//*[@title='Details']")).size();
+        return wd.findElements(By.xpath("//*[@title='Details']")).size();
     }
 }
 

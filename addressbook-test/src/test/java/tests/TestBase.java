@@ -1,12 +1,13 @@
 package tests;
 
 import ApplicationManager.ApplicationManager;
+import org.openqa.selenium.remote.BrowserType;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class TestBase {
 
-    protected  ApplicationManager app = new ApplicationManager();
+    protected  ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
 
     @BeforeClass
     public void setUp() throws Exception {
