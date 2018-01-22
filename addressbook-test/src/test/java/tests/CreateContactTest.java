@@ -9,7 +9,7 @@ public class CreateContactTest extends TestBase {
 
 
 
-    @Test
+    @Test(enabled = false)
     public void CreateContactTest() {
 
         int before = app.getContactHelper().getContactCount();

@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 
+import java.rmi.activation.ActivationGroup;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -64,5 +65,6 @@ public class ApplicationManager {
         public NavigationHeleper getNavigationeHelper() {
             return navigationeHelper;
         }
+
 
 }
